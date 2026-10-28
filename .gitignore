@@ -8,3 +8,14 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 .playwright-test/
+
+# Locally installed Playwright browsers
+.playwright-browsers/
+
+# Local backup and test scripts
+main_backup.py
+main_before_*.py
+main_ui_backup_*.py
+main_v2_backup.py
+gemini_test.py
+update_dashboard.py

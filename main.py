@@ -2,6 +2,14 @@ import asyncio
 import ipaddress
 import json
 import socket
+import os
+from pathlib import Path as FilePath
+
+os.environ.setdefault(
+    "PLAYWRIGHT_BROWSERS_PATH",
+    str(FilePath(__file__).resolve().parent / ".playwright-browsers"),
+)
+
 import urllib.error
 import urllib.request
 from urllib.parse import urldefrag, urljoin, urlparse
